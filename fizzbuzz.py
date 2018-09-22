@@ -50,8 +50,8 @@ buzz = int(input("For multiples of what number shall we print 'Buzz'? "))
 
 
 for i in range(1, amount + 1):
-    if (i % fizz) == 0: # tests for fizz 
-        if(i % buzz) == 0: # tests for fizzbuzz
+    if (i % fizz) == 0: # tests for fizz with a remainder
+        if(i % buzz) == 0: # tests for fizzbuzz 
             print("FizzBuzz")
         else:
             print("Fizz")
