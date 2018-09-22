@@ -1,7 +1,7 @@
 """
 fizzbuzz.py
 Author: Nick Lee
-Credit: <list sources used, if any>
+Credit: StackOverflow on how to use remainders
 
 Assignment:FizzBuzz
 
@@ -59,34 +59,6 @@ for i in range(1, amount + 1):
         print("Buzz")
     else:
         print(i)
-
-""" # big oof code here
-for i in range(amount):
-    F = str(round((i/fizz),3))
-    F = list(F[i] for i in range(len(F)))
-    print (F[2])
-
-//\\//\\
-for i in range(1,amount):
-    F = [i for i in amount]
-    print (F)
-    for j in range(6):
-        
-        if F[j] == ".":
-            print(i)
-            break
-        elif j == len(F):
-                print("Fizz")
-                
-        print(F[2])
-    B = (i/buzz)
-    for j in range(len(B)):
-        if B[j] == int(".") :
-            print(i)
-            break
-        elif j == len(B):
-                print("Buzz")
-"""
 
 
 
