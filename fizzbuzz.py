@@ -48,11 +48,25 @@ amount = int(input("How many numbers shall we print? "))
 fizz = int(input("For multiples of what number shall we print 'Fizz'? "))
 buzz = int(input("For multiples of what number shall we print 'Buzz'? "))
 
-for i in range(amount):
-    F = str(round((i/fizz),1))
-    print(len(F))
 
-"""
+for i in range(1, amount + 1):
+    if (i % fizz) == 0: # tests for fizz 
+        if(i % buzz) == 0: # tests for fizzbuzz
+            print("FizzBuzz")
+        else:
+            print("Fizz")
+    elif(i % buzz) == 0: # tests for buzz
+        print("Buzz")
+    else:
+        print(i)
+
+""" # big oof code here
+for i in range(amount):
+    F = str(round((i/fizz),3))
+    F = list(F[i] for i in range(len(F)))
+    print (F[2])
+
+//\\//\\
 for i in range(1,amount):
     F = [i for i in amount]
     print (F)
@@ -72,7 +86,7 @@ for i in range(1,amount):
             break
         elif j == len(B):
                 print("Buzz")
-    """
+"""
 
 
 
